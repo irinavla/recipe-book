@@ -17,3 +17,8 @@
 ion-tabs {
     z-index: -1;
 }
+
+[icon-left] ion-icon,
+[icon-start] ion-icon {
+  line-height: 1;
+}

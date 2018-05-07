@@ -1,4 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -10,6 +12,7 @@ import { RecipesPage } from '../pages/recipes/recipes';
 import { RecipePage } from '../pages/recipe/recipe';
 import { EditRecipePage } from '../pages/edit-recipe/edit-recipe';
 import { ShoppingListPage } from '../pages/shopping-list/shopping-list';
+import { SlOptionsPage } from '../pages/sl-options/sl-options';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { ShoppingListService } from '../services/shopping-list';
@@ -27,12 +30,15 @@ import { SignupPage } from '../pages/signup/signup';
     RecipePage,
     EditRecipePage,
     ShoppingListPage,
+    SlOptionsPage,
     TabsPage,
     SigninPage,
     SignupPage
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    HttpModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -43,6 +49,7 @@ import { SignupPage } from '../pages/signup/signup';
     RecipePage,
     EditRecipePage,
     ShoppingListPage,
+    SlOptionsPage,
     TabsPage,
     SigninPage,
     SignupPage

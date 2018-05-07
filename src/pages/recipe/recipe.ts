@@ -5,6 +5,7 @@ import { RecipesService } from '../../services/recipes';
 import { EditRecipePage } from '../edit-recipe/edit-recipe';
 import { ShoppingListService } from '../../services/shopping-list';
 
+
 @IonicPage()
 @Component({
   selector: 'page-recipe',
